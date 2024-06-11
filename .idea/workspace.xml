@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37d9a47f-979f-4fd8-8652-c2d0429d389d" name="更改" comment="修复语法错误" />
+    <list default="true" id="37d9a47f-979f-4fd8-8652-c2d0429d389d" name="更改" comment="修复语法错误">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,12 +28,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/znc15/AkariLevelMultiplier.git",
-    "accountId": "ef802272-cab9-4bcf-8b85-75a6d0ba9c32"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;znc15&quot;
   }
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/znc15/AkariLevelMultiplier.git&quot;,
+    &quot;accountId&quot;: &quot;ef802272-cab9-4bcf-8b85-75a6d0ba9c32&quot;
+  }
+}</component>
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -44,36 +55,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Maven.AkariLevelExperienceMultiplier [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AkariLevelExperienceMultiplier [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AkariLevelMultiplier [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AkariLevelMultiplier [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AkariLevelMultiplier [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.akarilevelmultiplier [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/AkariLevelMultiplier/libs/AkariLevel-3.1.1.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/AkariLevelMultiplier/src/main/java/com/littlesheep/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.25632185&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Maven.AkariLevelExperienceMultiplier [clean].executor": "Run",
+    "Maven.AkariLevelExperienceMultiplier [install].executor": "Run",
+    "Maven.AkariLevelExperienceMultiplier [package].executor": "Run",
+    "Maven.AkariLevelMultiplier [clean].executor": "Run",
+    "Maven.AkariLevelMultiplier [install].executor": "Run",
+    "Maven.AkariLevelMultiplier [package].executor": "Run",
+    "Maven.akarilevelmultiplier [install].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/AkariLevelMultiplier/libs/AkariLevel-3.1.1.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/AkariLevelMultiplier/src/main/java/com/littlesheep/Main.java",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.25632185",
+    "settings.editor.selected.configurable": "http.proxy",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn install" />
       <command value="mvn clean" />
+      <command value="mvn install" />
       <command value="mvn package" />
     </option>
   </component>
@@ -95,7 +108,8 @@
       <updated>1718079316706</updated>
       <workItem from="1718079317736" duration="7314000" />
       <workItem from="1718087276697" duration="592000" />
-      <workItem from="1718088192945" duration="309000" />
+      <workItem from="1718088192945" duration="435000" />
+      <workItem from="1718105311553" duration="1144000" />
     </task>
     <task id="LOCAL-00001" summary="上传主要文件">
       <option name="closed" value="true" />
@@ -137,11 +151,38 @@
       <option name="project" value="LOCAL" />
       <updated>1718088491714</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="修复语法错误">
+      <option name="closed" value="true" />
+      <created>1718088530486</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718088530486</updated>
+    </task>
+    <task id="LOCAL-00007" summary="修复语法错误">
+      <option name="closed" value="true" />
+      <created>1718088543199</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718088543199</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
