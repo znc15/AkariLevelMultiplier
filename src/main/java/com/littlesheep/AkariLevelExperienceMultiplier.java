@@ -9,6 +9,7 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 import org.bukkit.event.player.PlayerExpChangeEvent;
 import org.bukkit.event.server.PluginEnableEvent;
 import org.bukkit.plugin.Plugin;
@@ -26,10 +27,14 @@ public class AkariLevelExperienceMultiplier extends JavaPlugin implements TabExe
     private boolean multiplierEnded = false;
     private final Map<UUID, Double> playerMultipliers = new HashMap<>();
     private boolean isAkariLevelLoaded = false;
+    private boolean doubleExpOnCommand;
     private FileConfiguration messages;
 
     @Override
     public void onEnable() {
+        saveDefaultConfig(); // 保存默认配置文件
+        doubleExpOnCommand = getConfig().getBoolean("double_exp_on_command", true);
+
         // 加载消息配置
         loadMessages();
 
@@ -92,11 +97,42 @@ public class AkariLevelExperienceMultiplier extends JavaPlugin implements TabExe
     public void onPlayerExpChange(PlayerExpChangeEvent event) {
         Player player = event.getPlayer();
         double multiplier = playerMultipliers.getOrDefault(player.getUniqueId(), globalMultiplier);
+        if (multiplier == 1.0) {
+            return; // 没有设置倍率，直接返回
+        }
+
         int currentExp = AkariLevelAPI.INSTANCE.getPlayerExp(player);
         int newExp = (int) (currentExp * multiplier);
         AkariLevelAPI.INSTANCE.setPlayerExp(player, newExp, "经验倍率应用");
         event.setAmount(0); // 防止默认经验变化
         getLogger().info("玩家 " + player.getName() + " 经验倍率应用: " + multiplier + " 新经验: " + newExp);
+    }
+
+    @EventHandler
+    public void onPlayerCommandPreprocess(PlayerCommandPreprocessEvent event) {
+        if (!doubleExpOnCommand) return;
+
+        String[] commandParts = event.getMessage().split(" ");
+        if (commandParts.length >= 4 && commandParts[0].equalsIgnoreCase("/akarilevel")
+                && commandParts[1].equalsIgnoreCase("exp")
+                && commandParts[2].equalsIgnoreCase("add")) {
+
+            Player player = Bukkit.getPlayer(commandParts[3]);
+            if (player != null) {
+                double multiplier = playerMultipliers.getOrDefault(player.getUniqueId(), globalMultiplier);
+                if (multiplier != 1.0) {
+                    int expToAdd;
+                    try {
+                        expToAdd = Integer.parseInt(commandParts[4]);
+                    } catch (NumberFormatException e) {
+                        return; // 非法经验值，直接返回
+                    }
+                    int newExpToAdd = (int) (expToAdd * multiplier);
+                    commandParts[4] = String.valueOf(newExpToAdd);
+                    event.setMessage(String.join(" ", commandParts));
+                }
+            }
+        }
     }
 
     @Override
@@ -154,6 +190,11 @@ public class AkariLevelExperienceMultiplier extends JavaPlugin implements TabExe
                         player.sendMessage(getMessage("player_multiplier_ended", new HashMap<>()));
                     }, duration * 20L);
                 }
+
+                // 在设置倍率后给玩家增加一定量的经验
+                int expToAdd = 100; // 自定义的经验值
+                AkariLevelAPI.INSTANCE.addPlayerExp(player, expToAdd, "设置经验倍率");
+                player.sendMessage("你获得了 " + expToAdd + " 点经验值");
 
                 Map<String, String> placeholders = new HashMap<>();
                 placeholders.put("player", player.getName());
