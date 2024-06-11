@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37d9a47f-979f-4fd8-8652-c2d0429d389d" name="更改" comment="上传主要文件">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/littlesheep/AkariLevelExperienceMultiplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/littlesheep/AkariLevelExperienceMultiplier.java" afterDir="false" />
-    </list>
+    <list default="true" id="37d9a47f-979f-4fd8-8652-c2d0429d389d" name="更改" comment="修复语法错误" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,8 +14,21 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/znc15/AkariLevelMultiplier.git",
+    "accountId": "ef802272-cab9-4bcf-8b85-75a6d0ba9c32"
+  }
+}]]></component>
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -88,6 +95,7 @@
       <updated>1718079316706</updated>
       <workItem from="1718079317736" duration="7314000" />
       <workItem from="1718087276697" duration="592000" />
+      <workItem from="1718088192945" duration="309000" />
     </task>
     <task id="LOCAL-00001" summary="上传主要文件">
       <option name="closed" value="true" />
@@ -97,7 +105,39 @@
       <option name="project" value="LOCAL" />
       <updated>1718087024131</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="完善代码&#10;1.更新pom.xml&#10;2.修复不设置不倍率不会正常增加经验的情况">
+      <option name="closed" value="true" />
+      <created>1718088236575</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718088236575</updated>
+    </task>
+    <task id="LOCAL-00003" summary="修复语法错误">
+      <option name="closed" value="true" />
+      <created>1718088399285</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718088399285</updated>
+    </task>
+    <task id="LOCAL-00004" summary="修复语法错误">
+      <option name="closed" value="true" />
+      <created>1718088452673</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718088452673</updated>
+    </task>
+    <task id="LOCAL-00005" summary="修复语法错误">
+      <option name="closed" value="true" />
+      <created>1718088491714</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718088491714</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +146,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="上传主要文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="上传主要文件" />
+    <MESSAGE value="完善代码&#10;1.更新pom.xml&#10;2.修复不设置不倍率不会正常增加经验的情况" />
+    <MESSAGE value="修复语法错误" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复语法错误" />
   </component>
 </project>

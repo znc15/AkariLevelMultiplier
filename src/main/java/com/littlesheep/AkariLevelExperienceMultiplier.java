@@ -108,7 +108,7 @@ public class AkariLevelExperienceMultiplier extends JavaPlugin implements TabExe
             }
 
             if (args.length < 2) {
-                sender.sendMessage("用法: /setMultiplier <player|all> <multiplier> [duration in seconds]");
+                sender.sendMessage("用法: /setMultiplier <player|all> <multiplier> [seconds]");
                 return true;
             }
 
