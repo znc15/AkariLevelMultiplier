@@ -1,0 +1,6 @@
+messages:
+  player_multiplier_set: "将玩家 {player} 的经验倍率设置为 {multiplier}，持续 {duration} 秒。"
+  player_multiplier_ended: "你的经验倍率已结束。"
+  global_multiplier_set: "全局经验倍率设置为 {multiplier}，持续 {duration} 秒。"
+  global_multiplier_ended: "全局经验倍率已结束。"
+  no_permission: "你没有权限使用此命令。"

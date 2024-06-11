@@ -1,0 +1,14 @@
+name: AkariLevelExperienceMultiplier
+main: com.littlesheep.AkariLevelExperienceMultiplier
+version: 1.0.1
+api-version: 1.16
+description: AkariLevel 的附属经验倍率插件
+author: YangXiaoMian
+commands:
+  setMultiplier:
+    description: 设置经验倍率（单位为秒）
+    usage: /setMultiplier <player|all> <multiplier> [seconds]
+permissions:
+  akarilevel.setmultiplier:
+    description: 允许指定用户组使用
+    default: op
