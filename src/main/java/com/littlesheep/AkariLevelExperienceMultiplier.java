@@ -14,7 +14,6 @@ import org.bukkit.event.server.PluginEnableEvent;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import com.github.cpjinan.plugin.akarilevel.api.AkariLevelAPI;
-import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
 import java.util.*;
@@ -42,7 +41,7 @@ public class AkariLevelExperienceMultiplier extends JavaPlugin implements TabExe
         getLogger().info("QQ Group/QQ群: 690216634");
         getLogger().info("Github: https://github.com/znc15/AkariLevelExperienceMultiplier");
         getLogger().info(getDescription().getName() + " 已启用！");
-        getLogger().info("QAQ");
+        getLogger().info("❛‿˂̵✧");
         getLogger().info("==========================================");
 
         Objects.requireNonNull(this.getCommand("setMultiplier")).setExecutor(this);
@@ -101,7 +100,7 @@ public class AkariLevelExperienceMultiplier extends JavaPlugin implements TabExe
     }
 
     @Override
-    public boolean onCommand(@NotNull CommandSender sender, Command command, @NotNull String label, @NotNull String[] args) {
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (command.getName().equalsIgnoreCase("setMultiplier")) {
             if (!sender.hasPermission("akarilevel.setmultiplier")) {
                 sender.sendMessage(getMessage("no_permission", new HashMap<>()));
@@ -109,7 +108,7 @@ public class AkariLevelExperienceMultiplier extends JavaPlugin implements TabExe
             }
 
             if (args.length < 2) {
-                sender.sendMessage("用法: /setMultiplier <player|all> <multiplier> [seconds]");
+                sender.sendMessage("用法: /setMultiplier <player|all> <multiplier> [duration in seconds]");
                 return true;
             }
 
@@ -168,7 +167,7 @@ public class AkariLevelExperienceMultiplier extends JavaPlugin implements TabExe
     }
 
     @Override
-    public List<String> onTabComplete(@NotNull CommandSender sender, @NotNull Command command, @NotNull String alias, String[] args) {
+    public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
         if (args.length == 1) {
             List<String> suggestions = new ArrayList<>();
             suggestions.add("all");
