@@ -17,3 +17,6 @@
 
 ### 未来计划
 - 还在想（
+
+### 指令说明
+- setMultiplier <player|all> <倍速> [多少秒]

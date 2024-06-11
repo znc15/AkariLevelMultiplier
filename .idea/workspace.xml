@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37d9a47f-979f-4fd8-8652-c2d0429d389d" name="更改" comment="适配1.12.2以上版本">
+    <list default="true" id="37d9a47f-979f-4fd8-8652-c2d0429d389d" name="更改" comment="更新Readme.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -107,7 +107,7 @@
       <workItem from="1718079317736" duration="7314000" />
       <workItem from="1718087276697" duration="592000" />
       <workItem from="1718088192945" duration="435000" />
-      <workItem from="1718105311553" duration="1493000" />
+      <workItem from="1718105311553" duration="1938000" />
     </task>
     <task id="LOCAL-00001" summary="上传主要文件">
       <option name="closed" value="true" />
@@ -173,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718106538934</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="更新Readme.md">
+      <option name="closed" value="true" />
+      <created>1718106821373</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1718106821373</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +204,7 @@
     <MESSAGE value="完善代码&#10;1.更新pom.xml&#10;2.修复不设置不倍率不会正常增加经验的情况" />
     <MESSAGE value="修复语法错误" />
     <MESSAGE value="适配1.12.2以上版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="适配1.12.2以上版本" />
+    <MESSAGE value="更新Readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新Readme.md" />
   </component>
 </project>
