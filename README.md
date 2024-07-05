@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ### AkariLevelMultiplier
 - 插件名字为 AkariLevelMultiplier
 - 插件用途是AkariLevel的附属插件
@@ -20,3 +21,7 @@
 
 ### 指令说明
 - setMultiplier <player|all> <倍速> [多少秒]
+=======
+# AkariLevelMultiplier
+ AkariLevelMultiplier
+>>>>>>> Stashed changes
